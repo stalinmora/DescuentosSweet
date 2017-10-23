@@ -1,0 +1,11 @@
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweetcoffee\bin\Debug\com.sweetcoffee.dll.config
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweetcoffee\bin\Debug\com.sweetcoffee.dll
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweetcoffee\bin\Debug\com.sweetcoffee.pdb
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweetcoffee\bin\Debug\EntityFramework.dll
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweetcoffee\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweetcoffee\bin\Debug\EntityFramework.xml
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweetcoffee\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweetcoffee\obj\Debug\com.sweetcoffee.csprojResolveAssemblyReference.cache
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweetcoffee\obj\Debug\com.sweetcoffee.csproj.CoreCompileInputs.cache
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweetcoffee\obj\Debug\com.sweetcoffee.dll
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweetcoffee\obj\Debug\com.sweetcoffee.pdb

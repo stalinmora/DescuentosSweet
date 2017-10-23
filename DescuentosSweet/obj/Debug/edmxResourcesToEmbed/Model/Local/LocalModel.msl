@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBFRESTModelStoreContainer" CdmEntityContainer="DBFRESTEntities">
+    <EntitySetMapping Name="ALMACEN">
+      <EntityTypeMapping TypeName="DBFRESTModel.ALMACEN">
+        <MappingFragment StoreEntitySet="ALMACEN">
+          <ScalarProperty Name="CODALMACEN" ColumnName="CODALMACEN" />
+          <ScalarProperty Name="NOMBREALMACEN" ColumnName="NOMBREALMACEN" />
+          <ScalarProperty Name="POBLACION" ColumnName="POBLACION" />
+          <ScalarProperty Name="PROVINCIA" ColumnName="PROVINCIA" />
+          <ScalarProperty Name="NOTAS" ColumnName="NOTAS" />
+          <ScalarProperty Name="N" ColumnName="N" />
+          <ScalarProperty Name="CENTROCOSTE" ColumnName="CENTROCOSTE" />
+          <ScalarProperty Name="STOCKMINIMO" ColumnName="STOCKMINIMO" />
+          <ScalarProperty Name="STOCKMAXIMO" ColumnName="STOCKMAXIMO" />
+          <ScalarProperty Name="FACTOR" ColumnName="FACTOR" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+          <ScalarProperty Name="FAX" ColumnName="FAX" />
+          <ScalarProperty Name="SERIETRASPASOS" ColumnName="SERIETRASPASOS" />
+          <ScalarProperty Name="CODEMPRESACONTABLE" ColumnName="CODEMPRESACONTABLE" />
+          <ScalarProperty Name="VALORACIONTRASPASOS" ColumnName="VALORACIONTRASPASOS" />
+          <ScalarProperty Name="PVPETIQUETAS" ColumnName="PVPETIQUETAS" />
+          <ScalarProperty Name="VALORACIONINVENTARIO" ColumnName="VALORACIONINVENTARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ARTICULOS">
+      <EntityTypeMapping TypeName="DBFRESTModel.ARTICULOS">
+        <MappingFragment StoreEntitySet="ARTICULOS">
+          <ScalarProperty Name="CODARTICULO" ColumnName="CODARTICULO" />
+          <ScalarProperty Name="REFERENCIA" ColumnName="REFERENCIA" />
+          <ScalarProperty Name="REFTECLADO" ColumnName="REFTECLADO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="DESCRIPADICIONAL" ColumnName="DESCRIPADICIONAL" />
+          <ScalarProperty Name="IMAGEN" ColumnName="IMAGEN" />
+          <ScalarProperty Name="DPTO" ColumnName="DPTO" />
+          <ScalarProperty Name="SECCION" ColumnName="SECCION" />
+          <ScalarProperty Name="UNIDADES" ColumnName="UNIDADES" />
+          <ScalarProperty Name="CODTASA1" ColumnName="CODTASA1" />
+          <ScalarProperty Name="CODTASA2" ColumnName="CODTASA2" />
+          <ScalarProperty Name="SUSPENDIDO" ColumnName="SUSPENDIDO" />
+          <ScalarProperty Name="FECHAMODIFICADO" ColumnName="FECHAMODIFICADO" />
+          <ScalarProperty Name="ESKIT" ColumnName="ESKIT" />
+          <ScalarProperty Name="PORDOSIS" ColumnName="PORDOSIS" />
+          <ScalarProperty Name="SECOMPRA" ColumnName="SECOMPRA" />
+          <ScalarProperty Name="SEVENDE" ColumnName="SEVENDE" />
+          <ScalarProperty Name="ORDEN" ColumnName="ORDEN" />
+          <ScalarProperty Name="STOCKMINIMO" ColumnName="STOCKMINIMO" />
+          <ScalarProperty Name="UNIDADMEDIDA" ColumnName="UNIDADMEDIDA" />
+          <ScalarProperty Name="NOCOMBINAR" ColumnName="NOCOMBINAR" />
+          <ScalarProperty Name="MENU" ColumnName="MENU" />
+          <ScalarProperty Name="PORPESO" ColumnName="PORPESO" />
+          <ScalarProperty Name="PRECIOLIBRE" ColumnName="PRECIOLIBRE" />
+          <ScalarProperty Name="PRECIOMAX" ColumnName="PRECIOMAX" />
+          <ScalarProperty Name="PRECIOMIN" ColumnName="PRECIOMIN" />
+          <ScalarProperty Name="UDSELABORACION" ColumnName="UDSELABORACION" />
+          <ScalarProperty Name="COSTEMEDIO" ColumnName="COSTEMEDIO" />
+          <ScalarProperty Name="COSTESTOCK" ColumnName="COSTESTOCK" />
+          <ScalarProperty Name="ULTIMOCOSTE" ColumnName="ULTIMOCOSTE" />
+          <ScalarProperty Name="USASTOCKS" ColumnName="USASTOCKS" />
+          <ScalarProperty Name="FECHAULTCOMPRA" ColumnName="FECHAULTCOMPRA" />
+          <ScalarProperty Name="UDSCOMPRADAS" ColumnName="UDSCOMPRADAS" />
+          <ScalarProperty Name="CODTASA1C" ColumnName="CODTASA1C" />
+          <ScalarProperty Name="CODTASA2C" ColumnName="CODTASA2C" />
+          <ScalarProperty Name="CODMONEDA" ColumnName="CODMONEDA" />
+          <ScalarProperty Name="PRECIOULTCOMPRA" ColumnName="PRECIOULTCOMPRA" />
+          <ScalarProperty Name="ULTDESCCOMERCIAL" ColumnName="ULTDESCCOMERCIAL" />
+          <ScalarProperty Name="COLORFONDO" ColumnName="COLORFONDO" />
+          <ScalarProperty Name="COLORTEXTO" ColumnName="COLORTEXTO" />
+          <ScalarProperty Name="UNID1C" ColumnName="UNID1C" />
+          <ScalarProperty Name="UNID2C" ColumnName="UNID2C" />
+          <ScalarProperty Name="UNID3C" ColumnName="UNID3C" />
+          <ScalarProperty Name="UNID4C" ColumnName="UNID4C" />
+          <ScalarProperty Name="ULTDTOCOMERCIAL" ColumnName="ULTDTOCOMERCIAL" />
+          <ScalarProperty Name="PRECIOCOMPRAREAL" ColumnName="PRECIOCOMPRAREAL" />
+          <ScalarProperty Name="UDSTRASPASO" ColumnName="UDSTRASPASO" />
+          <ScalarProperty Name="FACTPORHORA" ColumnName="FACTPORHORA" />
+          <ScalarProperty Name="CONSUMADIC" ColumnName="CONSUMADIC" />
+          <ScalarProperty Name="TIPOARTICULO" ColumnName="TIPOARTICULO" />
+          <ScalarProperty Name="NUMCONSUMICIONES" ColumnName="NUMCONSUMICIONES" />
+          <ScalarProperty Name="NODISPONIBLE" ColumnName="NODISPONIBLE" />
+          <ScalarProperty Name="RENDIMIENTO" ColumnName="RENDIMIENTO" />
+          <ScalarProperty Name="DESCATALOGADO" ColumnName="DESCATALOGADO" />
+          <ScalarProperty Name="SELECCIONABLEALLTURNOS" ColumnName="SELECCIONABLEALLTURNOS" />
+          <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+          <ScalarProperty Name="LINEA" ColumnName="LINEA" />
+          <ScalarProperty Name="TARA" ColumnName="TARA" />
+          <ScalarProperty Name="IDTALONARIO" ColumnName="IDTALONARIO" />
+          <ScalarProperty Name="MEDIDA2" ColumnName="MEDIDA2" />
+          <ScalarProperty Name="NODTOAPLICABLE" ColumnName="NODTOAPLICABLE" />
+          <ScalarProperty Name="AVISOVENTA" ColumnName="AVISOVENTA" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+          <ScalarProperty Name="ESOFERTA" ColumnName="ESOFERTA" />
+          <ScalarProperty Name="CODCUPON" ColumnName="CODCUPON" />
+          <ScalarProperty Name="KCAL" ColumnName="KCAL" />
+          <ScalarProperty Name="FACTPORFRANJA" ColumnName="FACTPORFRANJA" />
+          <ScalarProperty Name="FORZARUDSENTERASVENTA" ColumnName="FORZARUDSENTERASVENTA" />
+          <ScalarProperty Name="ALERGENOS" ColumnName="ALERGENOS" />
+          <ScalarProperty Name="VALIDOPRIMERUSO" ColumnName="VALIDOPRIMERUSO" />
+          <ScalarProperty Name="COMPLETARPLATOSMENU" ColumnName="COMPLETARPLATOSMENU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KITS">
+      <EntityTypeMapping TypeName="DBFRESTModel.KITS">
+        <MappingFragment StoreEntitySet="KITS">
+          <ScalarProperty Name="CODARTICULO" ColumnName="CODARTICULO" />
+          <ScalarProperty Name="TALLA" ColumnName="TALLA" />
+          <ScalarProperty Name="COLOR" ColumnName="COLOR" />
+          <ScalarProperty Name="LINEAKIT" ColumnName="LINEAKIT" />
+          <ScalarProperty Name="CODARTKIT" ColumnName="CODARTKIT" />
+          <ScalarProperty Name="TALLAKIT" ColumnName="TALLAKIT" />
+          <ScalarProperty Name="COLORKIT" ColumnName="COLORKIT" />
+          <ScalarProperty Name="REFERENCIA" ColumnName="REFERENCIA" />
+          <ScalarProperty Name="DESCRIPCIOKIT" ColumnName="DESCRIPCIOKIT" />
+          <ScalarProperty Name="REFERENCIAKIT" ColumnName="REFERENCIAKIT" />
+          <ScalarProperty Name="UNIDADES" ColumnName="UNIDADES" />
+          <ScalarProperty Name="PRECIOUNIDAD" ColumnName="PRECIOUNIDAD" />
+          <ScalarProperty Name="TOTALLINEA" ColumnName="TOTALLINEA" />
+          <ScalarProperty Name="IMPRIMIRLINEA" ColumnName="IMPRIMIRLINEA" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRASPALMACEN">
+      <EntityTypeMapping TypeName="DBFRESTModel.TRASPALMACEN">
+        <MappingFragment StoreEntitySet="TRASPALMACEN">
+          <ScalarProperty Name="SERIE" ColumnName="SERIE" />
+          <ScalarProperty Name="NUMERO" ColumnName="NUMERO" />
+          <ScalarProperty Name="LINEA" ColumnName="LINEA" />
+          <ScalarProperty Name="CODALMORIG" ColumnName="CODALMORIG" />
+          <ScalarProperty Name="CODALMDEST" ColumnName="CODALMDEST" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="CODARTICULO" ColumnName="CODARTICULO" />
+          <ScalarProperty Name="REFERENCIA" ColumnName="REFERENCIA" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="UNIDADES" ColumnName="UNIDADES" />
+          <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="CAJA" ColumnName="CAJA" />
+          <ScalarProperty Name="Z" ColumnName="Z" />
+          <ScalarProperty Name="STOCK" ColumnName="STOCK" />
+          <ScalarProperty Name="DESCARGADO" ColumnName="DESCARGADO" />
+          <ScalarProperty Name="FECHACREACION" ColumnName="FECHACREACION" />
+          <ScalarProperty Name="IMPRESIONES" ColumnName="IMPRESIONES" />
+          <ScalarProperty Name="ESRECUENTO" ColumnName="ESRECUENTO" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="IDMOTIVO" ColumnName="IDMOTIVO" />
+          <ScalarProperty Name="DESCMOTIVO" ColumnName="DESCMOTIVO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VENDEDORES">
+      <EntityTypeMapping TypeName="DBFRESTModel.VENDEDORES">
+        <MappingFragment StoreEntitySet="VENDEDORES">
+          <ScalarProperty Name="CODVENDEDOR" ColumnName="CODVENDEDOR" />
+          <ScalarProperty Name="PASSWORDENTRADA" ColumnName="PASSWORDENTRADA" />
+          <ScalarProperty Name="NOMBREVENDEDOR" ColumnName="NOMBREVENDEDOR" />
+          <ScalarProperty Name="NOMBRECORTO" ColumnName="NOMBRECORTO" />
+          <ScalarProperty Name="COMISION" ColumnName="COMISION" />
+          <ScalarProperty Name="IMAGEN" ColumnName="IMAGEN" />
+          <ScalarProperty Name="MODULOZ" ColumnName="MODULOZ" />
+          <ScalarProperty Name="MODULOX" ColumnName="MODULOX" />
+          <ScalarProperty Name="ACTIVO" ColumnName="ACTIVO" />
+          <ScalarProperty Name="TIPOEMPLEADO" ColumnName="TIPOEMPLEADO" />
+          <ScalarProperty Name="PASSWORDREGISTRO" ColumnName="PASSWORDREGISTRO" />
+          <ScalarProperty Name="CODIGORF" ColumnName="CODIGORF" />
+          <ScalarProperty Name="DESCATALOGADO" ColumnName="DESCATALOGADO" />
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="COSTEHORA" ColumnName="COSTEHORA" />
+          <ScalarProperty Name="COSTEHORAEXTRA" ColumnName="COSTEHORAEXTRA" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="CODPOSTAL" ColumnName="CODPOSTAL" />
+          <ScalarProperty Name="POBLACION" ColumnName="POBLACION" />
+          <ScalarProperty Name="DNI" ColumnName="DNI" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+          <ScalarProperty Name="MOBIL" ColumnName="MOBIL" />
+          <ScalarProperty Name="FECHAENTRADA" ColumnName="FECHAENTRADA" />
+          <ScalarProperty Name="IDHOTEL" ColumnName="IDHOTEL" />
+          <ScalarProperty Name="NEWPASSWORDENTRADA" ColumnName="NEWPASSWORDENTRADA" />
+          <ScalarProperty Name="NEWPASSWORDREGISTRO" ColumnName="NEWPASSWORDREGISTRO" />
+          <ScalarProperty Name="NUMARTICULOSBORRADOS" ColumnName="NUMARTICULOSBORRADOS" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="COSTEHORAEXTRA2" ColumnName="COSTEHORAEXTRA2" />
+          <ScalarProperty Name="PASSWORDENTRADARFID" ColumnName="PASSWORDENTRADARFID" />
+          <ScalarProperty Name="PASSWORDREGISTRORFID" ColumnName="PASSWORDREGISTRORFID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

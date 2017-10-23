@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DBFRESTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ALMACEN">
+          <Key>
+            <PropertyRef Name="CODALMACEN" />
+          </Key>
+          <Property Name="CODALMACEN" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="NOMBREALMACEN" Type="nvarchar" MaxLength="30" />
+          <Property Name="POBLACION" Type="nvarchar" MaxLength="30" />
+          <Property Name="PROVINCIA" Type="nvarchar" MaxLength="30" />
+          <Property Name="NOTAS" Type="ntext" />
+          <Property Name="N" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="CENTROCOSTE" Type="nvarchar" MaxLength="6" />
+          <Property Name="STOCKMINIMO" Type="float" />
+          <Property Name="STOCKMAXIMO" Type="float" />
+          <Property Name="FACTOR" Type="float" />
+          <Property Name="DIRECCION" Type="nvarchar" MaxLength="30" />
+          <Property Name="TELEFONO" Type="nvarchar" MaxLength="15" />
+          <Property Name="FAX" Type="nvarchar" MaxLength="15" />
+          <Property Name="SERIETRASPASOS" Type="nvarchar" MaxLength="4" />
+          <Property Name="CODEMPRESACONTABLE" Type="int" />
+          <Property Name="VALORACIONTRASPASOS" Type="int" />
+          <Property Name="PVPETIQUETAS" Type="int" />
+          <Property Name="VALORACIONINVENTARIO" Type="int" />
+        </EntityType>
+        <EntityType Name="ARTICULOS">
+          <Key>
+            <PropertyRef Name="CODARTICULO" />
+          </Key>
+          <Property Name="CODARTICULO" Type="int" Nullable="false" />
+          <Property Name="REFERENCIA" Type="nvarchar" MaxLength="15" />
+          <Property Name="REFTECLADO" Type="nvarchar" MaxLength="8" />
+          <Property Name="DESCRIPCION" Type="nvarchar" MaxLength="45" />
+          <Property Name="DESCRIPADICIONAL" Type="nvarchar" MaxLength="30" />
+          <Property Name="IMAGEN" Type="image" />
+          <Property Name="DPTO" Type="int" />
+          <Property Name="SECCION" Type="int" />
+          <Property Name="UNIDADES" Type="float" />
+          <Property Name="CODTASA1" Type="smallint" />
+          <Property Name="CODTASA2" Type="smallint" />
+          <Property Name="SUSPENDIDO" Type="nchar" MaxLength="1" />
+          <Property Name="FECHAMODIFICADO" Type="datetime" />
+          <Property Name="ESKIT" Type="nchar" MaxLength="1" />
+          <Property Name="PORDOSIS" Type="nchar" MaxLength="1" />
+          <Property Name="SECOMPRA" Type="nchar" MaxLength="1" />
+          <Property Name="SEVENDE" Type="nchar" MaxLength="1" />
+          <Property Name="ORDEN" Type="int" />
+          <Property Name="STOCKMINIMO" Type="float" />
+          <Property Name="UNIDADMEDIDA" Type="nvarchar" MaxLength="10" />
+          <Property Name="NOCOMBINAR" Type="nchar" MaxLength="1" />
+          <Property Name="MENU" Type="nchar" MaxLength="1" />
+          <Property Name="PORPESO" Type="nchar" MaxLength="1" />
+          <Property Name="PRECIOLIBRE" Type="nchar" MaxLength="1" />
+          <Property Name="PRECIOMAX" Type="float" />
+          <Property Name="PRECIOMIN" Type="float" />
+          <Property Name="UDSELABORACION" Type="float" />
+          <Property Name="COSTEMEDIO" Type="float" />
+          <Property Name="COSTESTOCK" Type="float" />
+          <Property Name="ULTIMOCOSTE" Type="float" />
+          <Property Name="USASTOCKS" Type="nchar" MaxLength="1" />
+          <Property Name="FECHAULTCOMPRA" Type="datetime" />
+          <Property Name="UDSCOMPRADAS" Type="float" />
+          <Property Name="CODTASA1C" Type="int" />
+          <Property Name="CODTASA2C" Type="int" />
+          <Property Name="CODMONEDA" Type="int" />
+          <Property Name="PRECIOULTCOMPRA" Type="float" />
+          <Property Name="ULTDESCCOMERCIAL" Type="float" />
+          <Property Name="COLORFONDO" Type="int" />
+          <Property Name="COLORTEXTO" Type="int" />
+          <Property Name="UNID1C" Type="float" />
+          <Property Name="UNID2C" Type="float" />
+          <Property Name="UNID3C" Type="float" />
+          <Property Name="UNID4C" Type="float" />
+          <Property Name="ULTDTOCOMERCIAL" Type="float" />
+          <Property Name="PRECIOCOMPRAREAL" Type="float" />
+          <Property Name="UDSTRASPASO" Type="float" />
+          <Property Name="FACTPORHORA" Type="datetime" />
+          <Property Name="CONSUMADIC" Type="int" />
+          <Property Name="TIPOARTICULO" Type="nvarchar" MaxLength="1" />
+          <Property Name="NUMCONSUMICIONES" Type="int" />
+          <Property Name="NODISPONIBLE" Type="nchar" MaxLength="1" />
+          <Property Name="RENDIMIENTO" Type="float" />
+          <Property Name="DESCATALOGADO" Type="nchar" MaxLength="1" />
+          <Property Name="SELECCIONABLEALLTURNOS" Type="nvarchar" MaxLength="1" />
+          <Property Name="MARCA" Type="int" />
+          <Property Name="LINEA" Type="smallint" />
+          <Property Name="TARA" Type="float" />
+          <Property Name="IDTALONARIO" Type="int" />
+          <Property Name="MEDIDA2" Type="nvarchar" MaxLength="10" />
+          <Property Name="NODTOAPLICABLE" Type="bit" />
+          <Property Name="AVISOVENTA" Type="nvarchar" MaxLength="100" />
+          <Property Name="VERSION" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="ESOFERTA" Type="nchar" MaxLength="1" />
+          <Property Name="CODCUPON" Type="nvarchar" MaxLength="20" />
+          <Property Name="KCAL" Type="int" />
+          <Property Name="FACTPORFRANJA" Type="bit" />
+          <Property Name="FORZARUDSENTERASVENTA" Type="bit" />
+          <Property Name="ALERGENOS" Type="nvarchar" MaxLength="50" />
+          <Property Name="VALIDOPRIMERUSO" Type="bit" />
+          <Property Name="COMPLETARPLATOSMENU" Type="bit" />
+        </EntityType>
+        <EntityType Name="KITS">
+          <Key>
+            <PropertyRef Name="CODARTICULO" />
+            <PropertyRef Name="TALLA" />
+            <PropertyRef Name="COLOR" />
+            <PropertyRef Name="LINEAKIT" />
+          </Key>
+          <Property Name="CODARTICULO" Type="int" Nullable="false" />
+          <Property Name="TALLA" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="COLOR" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="LINEAKIT" Type="int" Nullable="false" />
+          <Property Name="CODARTKIT" Type="int" Nullable="false" />
+          <Property Name="TALLAKIT" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="COLORKIT" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="REFERENCIA" Type="nvarchar" MaxLength="15" />
+          <Property Name="DESCRIPCIOKIT" Type="nvarchar" MaxLength="40" />
+          <Property Name="REFERENCIAKIT" Type="nvarchar" MaxLength="15" />
+          <Property Name="UNIDADES" Type="float" />
+          <Property Name="PRECIOUNIDAD" Type="float" />
+          <Property Name="TOTALLINEA" Type="float" />
+          <Property Name="IMPRIMIRLINEA" Type="nchar" MaxLength="1" />
+          <Property Name="VERSION" Type="timestamp" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="TRASPALMACEN">
+          <Key>
+            <PropertyRef Name="SERIE" />
+            <PropertyRef Name="NUMERO" />
+            <PropertyRef Name="LINEA" />
+          </Key>
+          <Property Name="SERIE" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="NUMERO" Type="int" Nullable="false" />
+          <Property Name="LINEA" Type="int" Nullable="false" />
+          <Property Name="CODALMORIG" Type="nvarchar" MaxLength="3" />
+          <Property Name="CODALMDEST" Type="nvarchar" MaxLength="3" />
+          <Property Name="FECHA" Type="datetime" />
+          <Property Name="CODARTICULO" Type="int" />
+          <Property Name="REFERENCIA" Type="nvarchar" MaxLength="15" />
+          <Property Name="DESCRIPCION" Type="nvarchar" MaxLength="45" />
+          <Property Name="UNIDADES" Type="float" />
+          <Property Name="PRECIO" Type="float" />
+          <Property Name="USUARIO" Type="int" />
+          <Property Name="CAJA" Type="int" />
+          <Property Name="Z" Type="int" />
+          <Property Name="STOCK" Type="float" />
+          <Property Name="DESCARGADO" Type="nchar" MaxLength="1" />
+          <Property Name="FECHACREACION" Type="datetime" />
+          <Property Name="IMPRESIONES" Type="int" />
+          <Property Name="ESRECUENTO" Type="bit" />
+          <Property Name="OBSERVACIONES" Type="nvarchar" MaxLength="100" />
+          <Property Name="IDMOTIVO" Type="int" />
+          <Property Name="DESCMOTIVO" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="VENDEDORES">
+          <Key>
+            <PropertyRef Name="CODVENDEDOR" />
+          </Key>
+          <Property Name="CODVENDEDOR" Type="int" Nullable="false" />
+          <Property Name="PASSWORDENTRADA" Type="nvarchar" MaxLength="20" />
+          <Property Name="NOMBREVENDEDOR" Type="nvarchar" MaxLength="255" />
+          <Property Name="NOMBRECORTO" Type="nvarchar" MaxLength="10" />
+          <Property Name="COMISION" Type="float" />
+          <Property Name="IMAGEN" Type="image" />
+          <Property Name="MODULOZ" Type="nvarchar" MaxLength="25" />
+          <Property Name="MODULOX" Type="nvarchar" MaxLength="25" />
+          <Property Name="ACTIVO" Type="nchar" MaxLength="1" />
+          <Property Name="TIPOEMPLEADO" Type="int" />
+          <Property Name="PASSWORDREGISTRO" Type="nvarchar" MaxLength="20" />
+          <Property Name="CODIGORF" Type="int" />
+          <Property Name="DESCATALOGADO" Type="nchar" MaxLength="1" />
+          <Property Name="OBSERVACIONES" Type="ntext" />
+          <Property Name="COSTEHORA" Type="float" />
+          <Property Name="COSTEHORAEXTRA" Type="float" />
+          <Property Name="DIRECCION" Type="nvarchar" MaxLength="255" />
+          <Property Name="CODPOSTAL" Type="nvarchar" MaxLength="8" />
+          <Property Name="POBLACION" Type="nvarchar" MaxLength="100" />
+          <Property Name="DNI" Type="nvarchar" MaxLength="18" />
+          <Property Name="TELEFONO" Type="nvarchar" MaxLength="15" />
+          <Property Name="MOBIL" Type="nvarchar" MaxLength="15" />
+          <Property Name="FECHAENTRADA" Type="datetime" />
+          <Property Name="IDHOTEL" Type="int" />
+          <Property Name="NEWPASSWORDENTRADA" Type="nvarchar" MaxLength="40" />
+          <Property Name="NEWPASSWORDREGISTRO" Type="nvarchar" MaxLength="40" />
+          <Property Name="NUMARTICULOSBORRADOS" Type="int" />
+          <Property Name="VERSION" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="EMAIL" Type="nvarchar" MaxLength="255" />
+          <Property Name="COSTEHORAEXTRA2" Type="float" />
+          <Property Name="PASSWORDENTRADARFID" Type="nvarchar" MaxLength="40" />
+          <Property Name="PASSWORDREGISTRORFID" Type="nvarchar" MaxLength="40" />
+        </EntityType>
+        <Association Name="KITSARTICULOS_FK">
+          <End Role="ARTICULOS" Type="Self.ARTICULOS" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KITS" Type="Self.KITS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ARTICULOS">
+              <PropertyRef Name="CODARTICULO" />
+            </Principal>
+            <Dependent Role="KITS">
+              <PropertyRef Name="CODARTICULO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DBFRESTModelStoreContainer">
+          <EntitySet Name="ALMACEN" EntityType="Self.ALMACEN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ARTICULOS" EntityType="Self.ARTICULOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KITS" EntityType="Self.KITS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TRASPALMACEN" EntityType="Self.TRASPALMACEN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VENDEDORES" EntityType="Self.VENDEDORES" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="KITSARTICULOS_FK" Association="Self.KITSARTICULOS_FK">
+            <End Role="ARTICULOS" EntitySet="ARTICULOS" />
+            <End Role="KITS" EntitySet="KITS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBFRESTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ALMACEN">
+          <Key>
+            <PropertyRef Name="CODALMACEN" />
+          </Key>
+          <Property Name="CODALMACEN" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NOMBREALMACEN" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="POBLACION" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="PROVINCIA" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="NOTAS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="N" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="CENTROCOSTE" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="STOCKMINIMO" Type="Double" />
+          <Property Name="STOCKMAXIMO" Type="Double" />
+          <Property Name="FACTOR" Type="Double" />
+          <Property Name="DIRECCION" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="TELEFONO" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="FAX" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="SERIETRASPASOS" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="CODEMPRESACONTABLE" Type="Int32" />
+          <Property Name="VALORACIONTRASPASOS" Type="Int32" />
+          <Property Name="PVPETIQUETAS" Type="Int32" />
+          <Property Name="VALORACIONINVENTARIO" Type="Int32" />
+        </EntityType>
+        <EntityType Name="ARTICULOS">
+          <Key>
+            <PropertyRef Name="CODARTICULO" />
+          </Key>
+          <Property Name="CODARTICULO" Type="Int32" Nullable="false" />
+          <Property Name="REFERENCIA" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="REFTECLADO" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="DESCRIPADICIONAL" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="IMAGEN" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="DPTO" Type="Int32" />
+          <Property Name="SECCION" Type="Int32" />
+          <Property Name="UNIDADES" Type="Double" />
+          <Property Name="CODTASA1" Type="Int16" />
+          <Property Name="CODTASA2" Type="Int16" />
+          <Property Name="SUSPENDIDO" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="FECHAMODIFICADO" Type="DateTime" Precision="3" />
+          <Property Name="ESKIT" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="PORDOSIS" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="SECOMPRA" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="SEVENDE" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="ORDEN" Type="Int32" />
+          <Property Name="STOCKMINIMO" Type="Double" />
+          <Property Name="UNIDADMEDIDA" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="NOCOMBINAR" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="MENU" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="PORPESO" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="PRECIOLIBRE" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="PRECIOMAX" Type="Double" />
+          <Property Name="PRECIOMIN" Type="Double" />
+          <Property Name="UDSELABORACION" Type="Double" />
+          <Property Name="COSTEMEDIO" Type="Double" />
+          <Property Name="COSTESTOCK" Type="Double" />
+          <Property Name="ULTIMOCOSTE" Type="Double" />
+          <Property Name="USASTOCKS" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="FECHAULTCOMPRA" Type="DateTime" Precision="3" />
+          <Property Name="UDSCOMPRADAS" Type="Double" />
+          <Property Name="CODTASA1C" Type="Int32" />
+          <Property Name="CODTASA2C" Type="Int32" />
+          <Property Name="CODMONEDA" Type="Int32" />
+          <Property Name="PRECIOULTCOMPRA" Type="Double" />
+          <Property Name="ULTDESCCOMERCIAL" Type="Double" />
+          <Property Name="COLORFONDO" Type="Int32" />
+          <Property Name="COLORTEXTO" Type="Int32" />
+          <Property Name="UNID1C" Type="Double" />
+          <Property Name="UNID2C" Type="Double" />
+          <Property Name="UNID3C" Type="Double" />
+          <Property Name="UNID4C" Type="Double" />
+          <Property Name="ULTDTOCOMERCIAL" Type="Double" />
+          <Property Name="PRECIOCOMPRAREAL" Type="Double" />
+          <Property Name="UDSTRASPASO" Type="Double" />
+          <Property Name="FACTPORHORA" Type="DateTime" Precision="3" />
+          <Property Name="CONSUMADIC" Type="Int32" />
+          <Property Name="TIPOARTICULO" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="NUMCONSUMICIONES" Type="Int32" />
+          <Property Name="NODISPONIBLE" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="RENDIMIENTO" Type="Double" />
+          <Property Name="DESCATALOGADO" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="SELECCIONABLEALLTURNOS" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="MARCA" Type="Int32" />
+          <Property Name="LINEA" Type="Int16" />
+          <Property Name="TARA" Type="Double" />
+          <Property Name="IDTALONARIO" Type="Int32" />
+          <Property Name="MEDIDA2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="NODTOAPLICABLE" Type="Boolean" />
+          <Property Name="AVISOVENTA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="VERSION" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="ESOFERTA" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="CODCUPON" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="KCAL" Type="Int32" />
+          <Property Name="FACTPORFRANJA" Type="Boolean" />
+          <Property Name="FORZARUDSENTERASVENTA" Type="Boolean" />
+          <Property Name="ALERGENOS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="VALIDOPRIMERUSO" Type="Boolean" />
+          <Property Name="COMPLETARPLATOSMENU" Type="Boolean" />
+          <NavigationProperty Name="KITS" Relationship="Self.KITSARTICULOS_FK" FromRole="ARTICULOS" ToRole="KITS" />
+        </EntityType>
+        <EntityType Name="KITS">
+          <Key>
+            <PropertyRef Name="CODARTICULO" />
+            <PropertyRef Name="TALLA" />
+            <PropertyRef Name="COLOR" />
+            <PropertyRef Name="LINEAKIT" />
+          </Key>
+          <Property Name="CODARTICULO" Type="Int32" Nullable="false" />
+          <Property Name="TALLA" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="COLOR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LINEAKIT" Type="Int32" Nullable="false" />
+          <Property Name="CODARTKIT" Type="Int32" Nullable="false" />
+          <Property Name="TALLAKIT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="COLORKIT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="REFERENCIA" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="DESCRIPCIOKIT" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="REFERENCIAKIT" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="UNIDADES" Type="Double" />
+          <Property Name="PRECIOUNIDAD" Type="Double" />
+          <Property Name="TOTALLINEA" Type="Double" />
+          <Property Name="IMPRIMIRLINEA" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="VERSION" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="ARTICULOS" Relationship="Self.KITSARTICULOS_FK" FromRole="KITS" ToRole="ARTICULOS" />
+        </EntityType>
+        <EntityType Name="TRASPALMACEN">
+          <Key>
+            <PropertyRef Name="SERIE" />
+            <PropertyRef Name="NUMERO" />
+            <PropertyRef Name="LINEA" />
+          </Key>
+          <Property Name="SERIE" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NUMERO" Type="Int32" Nullable="false" />
+          <Property Name="LINEA" Type="Int32" Nullable="false" />
+          <Property Name="CODALMORIG" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="CODALMDEST" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="FECHA" Type="DateTime" Precision="3" />
+          <Property Name="CODARTICULO" Type="Int32" />
+          <Property Name="REFERENCIA" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="UNIDADES" Type="Double" />
+          <Property Name="PRECIO" Type="Double" />
+          <Property Name="USUARIO" Type="Int32" />
+          <Property Name="CAJA" Type="Int32" />
+          <Property Name="Z" Type="Int32" />
+          <Property Name="STOCK" Type="Double" />
+          <Property Name="DESCARGADO" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="FECHACREACION" Type="DateTime" Precision="3" />
+          <Property Name="IMPRESIONES" Type="Int32" />
+          <Property Name="ESRECUENTO" Type="Boolean" />
+          <Property Name="OBSERVACIONES" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IDMOTIVO" Type="Int32" />
+          <Property Name="DESCMOTIVO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="VENDEDORES">
+          <Key>
+            <PropertyRef Name="CODVENDEDOR" />
+          </Key>
+          <Property Name="CODVENDEDOR" Type="Int32" Nullable="false" />
+          <Property Name="PASSWORDENTRADA" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="NOMBREVENDEDOR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="NOMBRECORTO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="COMISION" Type="Double" />
+          <Property Name="IMAGEN" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="MODULOZ" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="MODULOX" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="ACTIVO" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="TIPOEMPLEADO" Type="Int32" />
+          <Property Name="PASSWORDREGISTRO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CODIGORF" Type="Int32" />
+          <Property Name="DESCATALOGADO" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="OBSERVACIONES" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="COSTEHORA" Type="Double" />
+          <Property Name="COSTEHORAEXTRA" Type="Double" />
+          <Property Name="DIRECCION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CODPOSTAL" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="POBLACION" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DNI" Type="String" MaxLength="18" FixedLength="false" Unicode="true" />
+          <Property Name="TELEFONO" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="MOBIL" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="FECHAENTRADA" Type="DateTime" Precision="3" />
+          <Property Name="IDHOTEL" Type="Int32" />
+          <Property Name="NEWPASSWORDENTRADA" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="NEWPASSWORDREGISTRO" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="NUMARTICULOSBORRADOS" Type="Int32" />
+          <Property Name="VERSION" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="EMAIL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="COSTEHORAEXTRA2" Type="Double" />
+          <Property Name="PASSWORDENTRADARFID" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="PASSWORDREGISTRORFID" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="KITSARTICULOS_FK">
+          <End Role="ARTICULOS" Type="Self.ARTICULOS" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KITS" Type="Self.KITS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ARTICULOS">
+              <PropertyRef Name="CODARTICULO" />
+            </Principal>
+            <Dependent Role="KITS">
+              <PropertyRef Name="CODARTICULO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DBFRESTEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ALMACEN" EntityType="Self.ALMACEN" />
+          <EntitySet Name="ARTICULOS" EntityType="Self.ARTICULOS" />
+          <EntitySet Name="KITS" EntityType="Self.KITS" />
+          <EntitySet Name="TRASPALMACEN" EntityType="Self.TRASPALMACEN" />
+          <EntitySet Name="VENDEDORES" EntityType="Self.VENDEDORES" />
+          <AssociationSet Name="KITSARTICULOS_FK" Association="Self.KITSARTICULOS_FK">
+            <End Role="ARTICULOS" EntitySet="ARTICULOS" />
+            <End Role="KITS" EntitySet="KITS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBFRESTModelStoreContainer" CdmEntityContainer="DBFRESTEntities">
+          <EntitySetMapping Name="ALMACEN">
+            <EntityTypeMapping TypeName="DBFRESTModel.ALMACEN">
+              <MappingFragment StoreEntitySet="ALMACEN">
+                <ScalarProperty Name="CODALMACEN" ColumnName="CODALMACEN" />
+                <ScalarProperty Name="NOMBREALMACEN" ColumnName="NOMBREALMACEN" />
+                <ScalarProperty Name="POBLACION" ColumnName="POBLACION" />
+                <ScalarProperty Name="PROVINCIA" ColumnName="PROVINCIA" />
+                <ScalarProperty Name="NOTAS" ColumnName="NOTAS" />
+                <ScalarProperty Name="N" ColumnName="N" />
+                <ScalarProperty Name="CENTROCOSTE" ColumnName="CENTROCOSTE" />
+                <ScalarProperty Name="STOCKMINIMO" ColumnName="STOCKMINIMO" />
+                <ScalarProperty Name="STOCKMAXIMO" ColumnName="STOCKMAXIMO" />
+                <ScalarProperty Name="FACTOR" ColumnName="FACTOR" />
+                <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+                <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+                <ScalarProperty Name="FAX" ColumnName="FAX" />
+                <ScalarProperty Name="SERIETRASPASOS" ColumnName="SERIETRASPASOS" />
+                <ScalarProperty Name="CODEMPRESACONTABLE" ColumnName="CODEMPRESACONTABLE" />
+                <ScalarProperty Name="VALORACIONTRASPASOS" ColumnName="VALORACIONTRASPASOS" />
+                <ScalarProperty Name="PVPETIQUETAS" ColumnName="PVPETIQUETAS" />
+                <ScalarProperty Name="VALORACIONINVENTARIO" ColumnName="VALORACIONINVENTARIO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ARTICULOS">
+            <EntityTypeMapping TypeName="DBFRESTModel.ARTICULOS">
+              <MappingFragment StoreEntitySet="ARTICULOS">
+                <ScalarProperty Name="CODARTICULO" ColumnName="CODARTICULO" />
+                <ScalarProperty Name="REFERENCIA" ColumnName="REFERENCIA" />
+                <ScalarProperty Name="REFTECLADO" ColumnName="REFTECLADO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="DESCRIPADICIONAL" ColumnName="DESCRIPADICIONAL" />
+                <ScalarProperty Name="IMAGEN" ColumnName="IMAGEN" />
+                <ScalarProperty Name="DPTO" ColumnName="DPTO" />
+                <ScalarProperty Name="SECCION" ColumnName="SECCION" />
+                <ScalarProperty Name="UNIDADES" ColumnName="UNIDADES" />
+                <ScalarProperty Name="CODTASA1" ColumnName="CODTASA1" />
+                <ScalarProperty Name="CODTASA2" ColumnName="CODTASA2" />
+                <ScalarProperty Name="SUSPENDIDO" ColumnName="SUSPENDIDO" />
+                <ScalarProperty Name="FECHAMODIFICADO" ColumnName="FECHAMODIFICADO" />
+                <ScalarProperty Name="ESKIT" ColumnName="ESKIT" />
+                <ScalarProperty Name="PORDOSIS" ColumnName="PORDOSIS" />
+                <ScalarProperty Name="SECOMPRA" ColumnName="SECOMPRA" />
+                <ScalarProperty Name="SEVENDE" ColumnName="SEVENDE" />
+                <ScalarProperty Name="ORDEN" ColumnName="ORDEN" />
+                <ScalarProperty Name="STOCKMINIMO" ColumnName="STOCKMINIMO" />
+                <ScalarProperty Name="UNIDADMEDIDA" ColumnName="UNIDADMEDIDA" />
+                <ScalarProperty Name="NOCOMBINAR" ColumnName="NOCOMBINAR" />
+                <ScalarProperty Name="MENU" ColumnName="MENU" />
+                <ScalarProperty Name="PORPESO" ColumnName="PORPESO" />
+                <ScalarProperty Name="PRECIOLIBRE" ColumnName="PRECIOLIBRE" />
+                <ScalarProperty Name="PRECIOMAX" ColumnName="PRECIOMAX" />
+                <ScalarProperty Name="PRECIOMIN" ColumnName="PRECIOMIN" />
+                <ScalarProperty Name="UDSELABORACION" ColumnName="UDSELABORACION" />
+                <ScalarProperty Name="COSTEMEDIO" ColumnName="COSTEMEDIO" />
+                <ScalarProperty Name="COSTESTOCK" ColumnName="COSTESTOCK" />
+                <ScalarProperty Name="ULTIMOCOSTE" ColumnName="ULTIMOCOSTE" />
+                <ScalarProperty Name="USASTOCKS" ColumnName="USASTOCKS" />
+                <ScalarProperty Name="FECHAULTCOMPRA" ColumnName="FECHAULTCOMPRA" />
+                <ScalarProperty Name="UDSCOMPRADAS" ColumnName="UDSCOMPRADAS" />
+                <ScalarProperty Name="CODTASA1C" ColumnName="CODTASA1C" />
+                <ScalarProperty Name="CODTASA2C" ColumnName="CODTASA2C" />
+                <ScalarProperty Name="CODMONEDA" ColumnName="CODMONEDA" />
+                <ScalarProperty Name="PRECIOULTCOMPRA" ColumnName="PRECIOULTCOMPRA" />
+                <ScalarProperty Name="ULTDESCCOMERCIAL" ColumnName="ULTDESCCOMERCIAL" />
+                <ScalarProperty Name="COLORFONDO" ColumnName="COLORFONDO" />
+                <ScalarProperty Name="COLORTEXTO" ColumnName="COLORTEXTO" />
+                <ScalarProperty Name="UNID1C" ColumnName="UNID1C" />
+                <ScalarProperty Name="UNID2C" ColumnName="UNID2C" />
+                <ScalarProperty Name="UNID3C" ColumnName="UNID3C" />
+                <ScalarProperty Name="UNID4C" ColumnName="UNID4C" />
+                <ScalarProperty Name="ULTDTOCOMERCIAL" ColumnName="ULTDTOCOMERCIAL" />
+                <ScalarProperty Name="PRECIOCOMPRAREAL" ColumnName="PRECIOCOMPRAREAL" />
+                <ScalarProperty Name="UDSTRASPASO" ColumnName="UDSTRASPASO" />
+                <ScalarProperty Name="FACTPORHORA" ColumnName="FACTPORHORA" />
+                <ScalarProperty Name="CONSUMADIC" ColumnName="CONSUMADIC" />
+                <ScalarProperty Name="TIPOARTICULO" ColumnName="TIPOARTICULO" />
+                <ScalarProperty Name="NUMCONSUMICIONES" ColumnName="NUMCONSUMICIONES" />
+                <ScalarProperty Name="NODISPONIBLE" ColumnName="NODISPONIBLE" />
+                <ScalarProperty Name="RENDIMIENTO" ColumnName="RENDIMIENTO" />
+                <ScalarProperty Name="DESCATALOGADO" ColumnName="DESCATALOGADO" />
+                <ScalarProperty Name="SELECCIONABLEALLTURNOS" ColumnName="SELECCIONABLEALLTURNOS" />
+                <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+                <ScalarProperty Name="LINEA" ColumnName="LINEA" />
+                <ScalarProperty Name="TARA" ColumnName="TARA" />
+                <ScalarProperty Name="IDTALONARIO" ColumnName="IDTALONARIO" />
+                <ScalarProperty Name="MEDIDA2" ColumnName="MEDIDA2" />
+                <ScalarProperty Name="NODTOAPLICABLE" ColumnName="NODTOAPLICABLE" />
+                <ScalarProperty Name="AVISOVENTA" ColumnName="AVISOVENTA" />
+                <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+                <ScalarProperty Name="ESOFERTA" ColumnName="ESOFERTA" />
+                <ScalarProperty Name="CODCUPON" ColumnName="CODCUPON" />
+                <ScalarProperty Name="KCAL" ColumnName="KCAL" />
+                <ScalarProperty Name="FACTPORFRANJA" ColumnName="FACTPORFRANJA" />
+                <ScalarProperty Name="FORZARUDSENTERASVENTA" ColumnName="FORZARUDSENTERASVENTA" />
+                <ScalarProperty Name="ALERGENOS" ColumnName="ALERGENOS" />
+                <ScalarProperty Name="VALIDOPRIMERUSO" ColumnName="VALIDOPRIMERUSO" />
+                <ScalarProperty Name="COMPLETARPLATOSMENU" ColumnName="COMPLETARPLATOSMENU" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KITS">
+            <EntityTypeMapping TypeName="DBFRESTModel.KITS">
+              <MappingFragment StoreEntitySet="KITS">
+                <ScalarProperty Name="CODARTICULO" ColumnName="CODARTICULO" />
+                <ScalarProperty Name="TALLA" ColumnName="TALLA" />
+                <ScalarProperty Name="COLOR" ColumnName="COLOR" />
+                <ScalarProperty Name="LINEAKIT" ColumnName="LINEAKIT" />
+                <ScalarProperty Name="CODARTKIT" ColumnName="CODARTKIT" />
+                <ScalarProperty Name="TALLAKIT" ColumnName="TALLAKIT" />
+                <ScalarProperty Name="COLORKIT" ColumnName="COLORKIT" />
+                <ScalarProperty Name="REFERENCIA" ColumnName="REFERENCIA" />
+                <ScalarProperty Name="DESCRIPCIOKIT" ColumnName="DESCRIPCIOKIT" />
+                <ScalarProperty Name="REFERENCIAKIT" ColumnName="REFERENCIAKIT" />
+                <ScalarProperty Name="UNIDADES" ColumnName="UNIDADES" />
+                <ScalarProperty Name="PRECIOUNIDAD" ColumnName="PRECIOUNIDAD" />
+                <ScalarProperty Name="TOTALLINEA" ColumnName="TOTALLINEA" />
+                <ScalarProperty Name="IMPRIMIRLINEA" ColumnName="IMPRIMIRLINEA" />
+                <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRASPALMACEN">
+            <EntityTypeMapping TypeName="DBFRESTModel.TRASPALMACEN">
+              <MappingFragment StoreEntitySet="TRASPALMACEN">
+                <ScalarProperty Name="SERIE" ColumnName="SERIE" />
+                <ScalarProperty Name="NUMERO" ColumnName="NUMERO" />
+                <ScalarProperty Name="LINEA" ColumnName="LINEA" />
+                <ScalarProperty Name="CODALMORIG" ColumnName="CODALMORIG" />
+                <ScalarProperty Name="CODALMDEST" ColumnName="CODALMDEST" />
+                <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+                <ScalarProperty Name="CODARTICULO" ColumnName="CODARTICULO" />
+                <ScalarProperty Name="REFERENCIA" ColumnName="REFERENCIA" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="UNIDADES" ColumnName="UNIDADES" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+                <ScalarProperty Name="CAJA" ColumnName="CAJA" />
+                <ScalarProperty Name="Z" ColumnName="Z" />
+                <ScalarProperty Name="STOCK" ColumnName="STOCK" />
+                <ScalarProperty Name="DESCARGADO" ColumnName="DESCARGADO" />
+                <ScalarProperty Name="FECHACREACION" ColumnName="FECHACREACION" />
+                <ScalarProperty Name="IMPRESIONES" ColumnName="IMPRESIONES" />
+                <ScalarProperty Name="ESRECUENTO" ColumnName="ESRECUENTO" />
+                <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+                <ScalarProperty Name="IDMOTIVO" ColumnName="IDMOTIVO" />
+                <ScalarProperty Name="DESCMOTIVO" ColumnName="DESCMOTIVO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VENDEDORES">
+            <EntityTypeMapping TypeName="DBFRESTModel.VENDEDORES">
+              <MappingFragment StoreEntitySet="VENDEDORES">
+                <ScalarProperty Name="CODVENDEDOR" ColumnName="CODVENDEDOR" />
+                <ScalarProperty Name="PASSWORDENTRADA" ColumnName="PASSWORDENTRADA" />
+                <ScalarProperty Name="NOMBREVENDEDOR" ColumnName="NOMBREVENDEDOR" />
+                <ScalarProperty Name="NOMBRECORTO" ColumnName="NOMBRECORTO" />
+                <ScalarProperty Name="COMISION" ColumnName="COMISION" />
+                <ScalarProperty Name="IMAGEN" ColumnName="IMAGEN" />
+                <ScalarProperty Name="MODULOZ" ColumnName="MODULOZ" />
+                <ScalarProperty Name="MODULOX" ColumnName="MODULOX" />
+                <ScalarProperty Name="ACTIVO" ColumnName="ACTIVO" />
+                <ScalarProperty Name="TIPOEMPLEADO" ColumnName="TIPOEMPLEADO" />
+                <ScalarProperty Name="PASSWORDREGISTRO" ColumnName="PASSWORDREGISTRO" />
+                <ScalarProperty Name="CODIGORF" ColumnName="CODIGORF" />
+                <ScalarProperty Name="DESCATALOGADO" ColumnName="DESCATALOGADO" />
+                <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+                <ScalarProperty Name="COSTEHORA" ColumnName="COSTEHORA" />
+                <ScalarProperty Name="COSTEHORAEXTRA" ColumnName="COSTEHORAEXTRA" />
+                <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+                <ScalarProperty Name="CODPOSTAL" ColumnName="CODPOSTAL" />
+                <ScalarProperty Name="POBLACION" ColumnName="POBLACION" />
+                <ScalarProperty Name="DNI" ColumnName="DNI" />
+                <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+                <ScalarProperty Name="MOBIL" ColumnName="MOBIL" />
+                <ScalarProperty Name="FECHAENTRADA" ColumnName="FECHAENTRADA" />
+                <ScalarProperty Name="IDHOTEL" ColumnName="IDHOTEL" />
+                <ScalarProperty Name="NEWPASSWORDENTRADA" ColumnName="NEWPASSWORDENTRADA" />
+                <ScalarProperty Name="NEWPASSWORDREGISTRO" ColumnName="NEWPASSWORDREGISTRO" />
+                <ScalarProperty Name="NUMARTICULOSBORRADOS" ColumnName="NUMARTICULOSBORRADOS" />
+                <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="COSTEHORAEXTRA2" ColumnName="COSTEHORAEXTRA2" />
+                <ScalarProperty Name="PASSWORDENTRADARFID" ColumnName="PASSWORDENTRADARFID" />
+                <ScalarProperty Name="PASSWORDREGISTRORFID" ColumnName="PASSWORDREGISTRORFID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

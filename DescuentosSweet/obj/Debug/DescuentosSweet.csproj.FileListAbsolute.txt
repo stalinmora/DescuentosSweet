@@ -12,3 +12,9 @@ C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\Descuentos
 C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\obj\Debug\DescuentosSweet.csproj.CoreCompileInputs.cache
 C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\obj\Debug\DescuentosSweet.exe
 C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\obj\Debug\DescuentosSweet.pdb
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\bin\Debug\DescuentosSweet.exe.config
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\bin\Debug\EntityFramework.dll
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\bin\Debug\EntityFramework.xml
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\obj\Debug\DescuentosSweet_Content.g.cs
