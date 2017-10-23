@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DescuentosSweet", "DescuentosSweet\DescuentosSweet.csproj", "{9C1C6E72-A419-4C77-B962-C3F95009551D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebasTest", "PruebasTest\PruebasTest.csproj", "{CDE24F45-DDED-45CC-87F1-A3047B76C496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.sweetcoffee", "com.sweetcoffee\com.sweetcoffee.csproj", "{93FA4549-9503-4DB8-8948-97DF59F6AB1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{9C1C6E72-A419-4C77-B962-C3F95009551D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C1C6E72-A419-4C77-B962-C3F95009551D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C1C6E72-A419-4C77-B962-C3F95009551D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE24F45-DDED-45CC-87F1-A3047B76C496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE24F45-DDED-45CC-87F1-A3047B76C496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE24F45-DDED-45CC-87F1-A3047B76C496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE24F45-DDED-45CC-87F1-A3047B76C496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93FA4549-9503-4DB8-8948-97DF59F6AB1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FA4549-9503-4DB8-8948-97DF59F6AB1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FA4549-9503-4DB8-8948-97DF59F6AB1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FA4549-9503-4DB8-8948-97DF59F6AB1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
