@@ -1,0 +1,11 @@
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\PruebasTest\bin\Debug\PruebasTest.exe
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\PruebasTest\bin\Debug\PruebasTest.pdb
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\PruebasTest\obj\Debug\PruebasTest.csprojResolveAssemblyReference.cache
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\PruebasTest\obj\Debug\PruebasTest.csproj.CoreCompileInputs.cache
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\PruebasTest\obj\Debug\PruebasTest.exe
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\PruebasTest\obj\Debug\PruebasTest.pdb
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\PruebasTest\bin\Debug\com.sweet.dll
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\PruebasTest\bin\Debug\EntityFramework.dll
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\PruebasTest\bin\Debug\com.sweet.pdb
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\PruebasTest\bin\Debug\com.sweet.dll.config
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\PruebasTest\bin\Debug\EntityFramework.xml

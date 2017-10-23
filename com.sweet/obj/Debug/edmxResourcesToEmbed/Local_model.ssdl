@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ALMACEN">
+    <Key>
+      <PropertyRef Name="CODALMACEN" />
+    </Key>
+    <Property Name="CODALMACEN" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="NOMBREALMACEN" Type="nvarchar" MaxLength="30" />
+    <Property Name="POBLACION" Type="nvarchar" MaxLength="30" />
+    <Property Name="PROVINCIA" Type="nvarchar" MaxLength="30" />
+    <Property Name="NOTAS" Type="ntext" />
+    <Property Name="N" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="CENTROCOSTE" Type="nvarchar" MaxLength="6" />
+    <Property Name="STOCKMINIMO" Type="float" />
+    <Property Name="STOCKMAXIMO" Type="float" />
+    <Property Name="FACTOR" Type="float" />
+    <Property Name="DIRECCION" Type="nvarchar" MaxLength="30" />
+    <Property Name="TELEFONO" Type="nvarchar" MaxLength="15" />
+    <Property Name="FAX" Type="nvarchar" MaxLength="15" />
+    <Property Name="SERIETRASPASOS" Type="nvarchar" MaxLength="4" />
+    <Property Name="CODEMPRESACONTABLE" Type="int" />
+    <Property Name="VALORACIONTRASPASOS" Type="int" />
+    <Property Name="PVPETIQUETAS" Type="int" />
+    <Property Name="VALORACIONINVENTARIO" Type="int" />
+  </EntityType>
+  <EntityType Name="ARTICULOS">
+    <Key>
+      <PropertyRef Name="CODARTICULO" />
+    </Key>
+    <Property Name="CODARTICULO" Type="int" Nullable="false" />
+    <Property Name="REFERENCIA" Type="nvarchar" MaxLength="15" />
+    <Property Name="REFTECLADO" Type="nvarchar" MaxLength="8" />
+    <Property Name="DESCRIPCION" Type="nvarchar" MaxLength="45" />
+    <Property Name="DESCRIPADICIONAL" Type="nvarchar" MaxLength="30" />
+    <Property Name="IMAGEN" Type="image" />
+    <Property Name="DPTO" Type="int" />
+    <Property Name="SECCION" Type="int" />
+    <Property Name="UNIDADES" Type="float" />
+    <Property Name="CODTASA1" Type="smallint" />
+    <Property Name="CODTASA2" Type="smallint" />
+    <Property Name="SUSPENDIDO" Type="nchar" MaxLength="1" />
+    <Property Name="FECHAMODIFICADO" Type="datetime" />
+    <Property Name="ESKIT" Type="nchar" MaxLength="1" />
+    <Property Name="PORDOSIS" Type="nchar" MaxLength="1" />
+    <Property Name="SECOMPRA" Type="nchar" MaxLength="1" />
+    <Property Name="SEVENDE" Type="nchar" MaxLength="1" />
+    <Property Name="ORDEN" Type="int" />
+    <Property Name="STOCKMINIMO" Type="float" />
+    <Property Name="UNIDADMEDIDA" Type="nvarchar" MaxLength="10" />
+    <Property Name="NOCOMBINAR" Type="nchar" MaxLength="1" />
+    <Property Name="MENU" Type="nchar" MaxLength="1" />
+    <Property Name="PORPESO" Type="nchar" MaxLength="1" />
+    <Property Name="PRECIOLIBRE" Type="nchar" MaxLength="1" />
+    <Property Name="PRECIOMAX" Type="float" />
+    <Property Name="PRECIOMIN" Type="float" />
+    <Property Name="UDSELABORACION" Type="float" />
+    <Property Name="COSTEMEDIO" Type="float" />
+    <Property Name="COSTESTOCK" Type="float" />
+    <Property Name="ULTIMOCOSTE" Type="float" />
+    <Property Name="USASTOCKS" Type="nchar" MaxLength="1" />
+    <Property Name="FECHAULTCOMPRA" Type="datetime" />
+    <Property Name="UDSCOMPRADAS" Type="float" />
+    <Property Name="CODTASA1C" Type="int" />
+    <Property Name="CODTASA2C" Type="int" />
+    <Property Name="CODMONEDA" Type="int" />
+    <Property Name="PRECIOULTCOMPRA" Type="float" />
+    <Property Name="ULTDESCCOMERCIAL" Type="float" />
+    <Property Name="COLORFONDO" Type="int" />
+    <Property Name="COLORTEXTO" Type="int" />
+    <Property Name="UNID1C" Type="float" />
+    <Property Name="UNID2C" Type="float" />
+    <Property Name="UNID3C" Type="float" />
+    <Property Name="UNID4C" Type="float" />
+    <Property Name="ULTDTOCOMERCIAL" Type="float" />
+    <Property Name="PRECIOCOMPRAREAL" Type="float" />
+    <Property Name="UDSTRASPASO" Type="float" />
+    <Property Name="FACTPORHORA" Type="datetime" />
+    <Property Name="CONSUMADIC" Type="int" />
+    <Property Name="TIPOARTICULO" Type="nvarchar" MaxLength="1" />
+    <Property Name="NUMCONSUMICIONES" Type="int" />
+    <Property Name="NODISPONIBLE" Type="nchar" MaxLength="1" />
+    <Property Name="RENDIMIENTO" Type="float" />
+    <Property Name="DESCATALOGADO" Type="nchar" MaxLength="1" />
+    <Property Name="SELECCIONABLEALLTURNOS" Type="nvarchar" MaxLength="1" />
+    <Property Name="MARCA" Type="int" />
+    <Property Name="LINEA" Type="smallint" />
+    <Property Name="TARA" Type="float" />
+    <Property Name="IDTALONARIO" Type="int" />
+    <Property Name="MEDIDA2" Type="nvarchar" MaxLength="10" />
+    <Property Name="NODTOAPLICABLE" Type="bit" />
+    <Property Name="AVISOVENTA" Type="nvarchar" MaxLength="100" />
+    <Property Name="VERSION" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="ESOFERTA" Type="nchar" MaxLength="1" />
+    <Property Name="CODCUPON" Type="nvarchar" MaxLength="20" />
+    <Property Name="KCAL" Type="int" />
+    <Property Name="FACTPORFRANJA" Type="bit" />
+    <Property Name="FORZARUDSENTERASVENTA" Type="bit" />
+    <Property Name="ALERGENOS" Type="nvarchar" MaxLength="50" />
+    <Property Name="VALIDOPRIMERUSO" Type="bit" />
+    <Property Name="COMPLETARPLATOSMENU" Type="bit" />
+  </EntityType>
+  <EntityType Name="KITS">
+    <Key>
+      <PropertyRef Name="CODARTICULO" />
+      <PropertyRef Name="TALLA" />
+      <PropertyRef Name="COLOR" />
+      <PropertyRef Name="LINEAKIT" />
+    </Key>
+    <Property Name="CODARTICULO" Type="int" Nullable="false" />
+    <Property Name="TALLA" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="COLOR" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="LINEAKIT" Type="int" Nullable="false" />
+    <Property Name="CODARTKIT" Type="int" Nullable="false" />
+    <Property Name="TALLAKIT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="COLORKIT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="REFERENCIA" Type="nvarchar" MaxLength="15" />
+    <Property Name="DESCRIPCIOKIT" Type="nvarchar" MaxLength="40" />
+    <Property Name="REFERENCIAKIT" Type="nvarchar" MaxLength="15" />
+    <Property Name="UNIDADES" Type="float" />
+    <Property Name="PRECIOUNIDAD" Type="float" />
+    <Property Name="TOTALLINEA" Type="float" />
+    <Property Name="IMPRIMIRLINEA" Type="nchar" MaxLength="1" />
+    <Property Name="VERSION" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="PRECIOSVENTA">
+    <Key>
+      <PropertyRef Name="CODARTICULO" />
+      <PropertyRef Name="CODFORMATO" />
+      <PropertyRef Name="IDTARIFAV" />
+    </Key>
+    <Property Name="CODARTICULO" Type="int" Nullable="false" />
+    <Property Name="CODFORMATO" Type="int" Nullable="false" />
+    <Property Name="IDTARIFAV" Type="int" Nullable="false" />
+    <Property Name="VALOR" Type="float" />
+    <Property Name="DESDE2" Type="datetime" />
+    <Property Name="HASTA2" Type="datetime" />
+    <Property Name="VALOR2" Type="float" />
+    <Property Name="DESCATALOGADO" Type="bit" />
+    <Property Name="VERSION" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="TRASPALMACEN">
+    <Key>
+      <PropertyRef Name="SERIE" />
+      <PropertyRef Name="NUMERO" />
+      <PropertyRef Name="LINEA" />
+    </Key>
+    <Property Name="SERIE" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="NUMERO" Type="int" Nullable="false" />
+    <Property Name="LINEA" Type="int" Nullable="false" />
+    <Property Name="CODALMORIG" Type="nvarchar" MaxLength="3" />
+    <Property Name="CODALMDEST" Type="nvarchar" MaxLength="3" />
+    <Property Name="FECHA" Type="datetime" />
+    <Property Name="CODARTICULO" Type="int" />
+    <Property Name="REFERENCIA" Type="nvarchar" MaxLength="15" />
+    <Property Name="DESCRIPCION" Type="nvarchar" MaxLength="45" />
+    <Property Name="UNIDADES" Type="float" />
+    <Property Name="PRECIO" Type="float" />
+    <Property Name="USUARIO" Type="int" />
+    <Property Name="CAJA" Type="int" />
+    <Property Name="Z" Type="int" />
+    <Property Name="STOCK" Type="float" />
+    <Property Name="DESCARGADO" Type="nchar" MaxLength="1" />
+    <Property Name="FECHACREACION" Type="datetime" />
+    <Property Name="IMPRESIONES" Type="int" />
+    <Property Name="ESRECUENTO" Type="bit" />
+    <Property Name="OBSERVACIONES" Type="nvarchar" MaxLength="100" />
+    <Property Name="IDMOTIVO" Type="int" />
+    <Property Name="DESCMOTIVO" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="VENDEDORES">
+    <Key>
+      <PropertyRef Name="CODVENDEDOR" />
+    </Key>
+    <Property Name="CODVENDEDOR" Type="int" Nullable="false" />
+    <Property Name="PASSWORDENTRADA" Type="nvarchar" MaxLength="20" />
+    <Property Name="NOMBREVENDEDOR" Type="nvarchar" MaxLength="255" />
+    <Property Name="NOMBRECORTO" Type="nvarchar" MaxLength="10" />
+    <Property Name="COMISION" Type="float" />
+    <Property Name="IMAGEN" Type="image" />
+    <Property Name="MODULOZ" Type="nvarchar" MaxLength="25" />
+    <Property Name="MODULOX" Type="nvarchar" MaxLength="25" />
+    <Property Name="ACTIVO" Type="nchar" MaxLength="1" />
+    <Property Name="TIPOEMPLEADO" Type="int" />
+    <Property Name="PASSWORDREGISTRO" Type="nvarchar" MaxLength="20" />
+    <Property Name="CODIGORF" Type="int" />
+    <Property Name="DESCATALOGADO" Type="nchar" MaxLength="1" />
+    <Property Name="OBSERVACIONES" Type="ntext" />
+    <Property Name="COSTEHORA" Type="float" />
+    <Property Name="COSTEHORAEXTRA" Type="float" />
+    <Property Name="DIRECCION" Type="nvarchar" MaxLength="255" />
+    <Property Name="CODPOSTAL" Type="nvarchar" MaxLength="8" />
+    <Property Name="POBLACION" Type="nvarchar" MaxLength="100" />
+    <Property Name="DNI" Type="nvarchar" MaxLength="18" />
+    <Property Name="TELEFONO" Type="nvarchar" MaxLength="15" />
+    <Property Name="MOBIL" Type="nvarchar" MaxLength="15" />
+    <Property Name="FECHAENTRADA" Type="datetime" />
+    <Property Name="IDHOTEL" Type="int" />
+    <Property Name="NEWPASSWORDENTRADA" Type="nvarchar" MaxLength="40" />
+    <Property Name="NEWPASSWORDREGISTRO" Type="nvarchar" MaxLength="40" />
+    <Property Name="NUMARTICULOSBORRADOS" Type="int" />
+    <Property Name="VERSION" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="255" />
+    <Property Name="COSTEHORAEXTRA2" Type="float" />
+    <Property Name="PASSWORDENTRADARFID" Type="nvarchar" MaxLength="40" />
+    <Property Name="PASSWORDREGISTRORFID" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <Association Name="KITSARTICULOS_FK">
+    <End Role="ARTICULOS" Type="Self.ARTICULOS" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="KITS" Type="Self.KITS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ARTICULOS">
+        <PropertyRef Name="CODARTICULO" />
+      </Principal>
+      <Dependent Role="KITS">
+        <PropertyRef Name="CODARTICULO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PRECIOSVENTA_ARTICULOS">
+    <End Role="ARTICULOS" Type="Self.ARTICULOS" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PRECIOSVENTA" Type="Self.PRECIOSVENTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ARTICULOS">
+        <PropertyRef Name="CODARTICULO" />
+      </Principal>
+      <Dependent Role="PRECIOSVENTA">
+        <PropertyRef Name="CODARTICULO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="ALMACEN" EntityType="Self.ALMACEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ARTICULOS" EntityType="Self.ARTICULOS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KITS" EntityType="Self.KITS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRECIOSVENTA" EntityType="Self.PRECIOSVENTA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TRASPALMACEN" EntityType="Self.TRASPALMACEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VENDEDORES" EntityType="Self.VENDEDORES" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="KITSARTICULOS_FK" Association="Self.KITSARTICULOS_FK">
+      <End Role="ARTICULOS" EntitySet="ARTICULOS" />
+      <End Role="KITS" EntitySet="KITS" />
+    </AssociationSet>
+    <AssociationSet Name="PRECIOSVENTA_ARTICULOS" Association="Self.PRECIOSVENTA_ARTICULOS">
+      <End Role="ARTICULOS" EntitySet="ARTICULOS" />
+      <End Role="PRECIOSVENTA" EntitySet="PRECIOSVENTA" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

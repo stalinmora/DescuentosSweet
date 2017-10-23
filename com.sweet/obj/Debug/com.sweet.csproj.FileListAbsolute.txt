@@ -1,0 +1,11 @@
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweet\bin\Debug\com.sweet.dll.config
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweet\bin\Debug\com.sweet.dll
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweet\bin\Debug\com.sweet.pdb
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweet\obj\Debug\com.sweet.csproj.CoreCompileInputs.cache
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweet\obj\Debug\com.sweet.dll
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\com.sweet\obj\Debug\com.sweet.pdb
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\com.sweet\bin\Debug\EntityFramework.dll
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\com.sweet\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\com.sweet\bin\Debug\EntityFramework.xml
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\com.sweet\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\s.mora\Documents\Visual Studio 2017\Projects\DescuentosSweet\com.sweet\obj\Debug\com.sweet.csprojResolveAssemblyReference.cache

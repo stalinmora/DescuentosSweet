@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ALMACEN">
+    <Key>
+      <PropertyRef Name="CODALMACEN" />
+    </Key>
+    <Property Name="CODALMACEN" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NOMBREALMACEN" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="POBLACION" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="PROVINCIA" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="NOTAS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="N" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="CENTROCOSTE" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="STOCKMINIMO" Type="Double" />
+    <Property Name="STOCKMAXIMO" Type="Double" />
+    <Property Name="FACTOR" Type="Double" />
+    <Property Name="DIRECCION" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="TELEFONO" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="FAX" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="SERIETRASPASOS" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="CODEMPRESACONTABLE" Type="Int32" />
+    <Property Name="VALORACIONTRASPASOS" Type="Int32" />
+    <Property Name="PVPETIQUETAS" Type="Int32" />
+    <Property Name="VALORACIONINVENTARIO" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ARTICULOS">
+    <Key>
+      <PropertyRef Name="CODARTICULO" />
+    </Key>
+    <Property Name="CODARTICULO" Type="Int32" Nullable="false" />
+    <Property Name="REFERENCIA" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="REFTECLADO" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPADICIONAL" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="IMAGEN" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="DPTO" Type="Int32" />
+    <Property Name="SECCION" Type="Int32" />
+    <Property Name="UNIDADES" Type="Double" />
+    <Property Name="CODTASA1" Type="Int16" />
+    <Property Name="CODTASA2" Type="Int16" />
+    <Property Name="SUSPENDIDO" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="FECHAMODIFICADO" Type="DateTime" Precision="3" />
+    <Property Name="ESKIT" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="PORDOSIS" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="SECOMPRA" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="SEVENDE" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="ORDEN" Type="Int32" />
+    <Property Name="STOCKMINIMO" Type="Double" />
+    <Property Name="UNIDADMEDIDA" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="NOCOMBINAR" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="MENU" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="PORPESO" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="PRECIOLIBRE" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="PRECIOMAX" Type="Double" />
+    <Property Name="PRECIOMIN" Type="Double" />
+    <Property Name="UDSELABORACION" Type="Double" />
+    <Property Name="COSTEMEDIO" Type="Double" />
+    <Property Name="COSTESTOCK" Type="Double" />
+    <Property Name="ULTIMOCOSTE" Type="Double" />
+    <Property Name="USASTOCKS" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="FECHAULTCOMPRA" Type="DateTime" Precision="3" />
+    <Property Name="UDSCOMPRADAS" Type="Double" />
+    <Property Name="CODTASA1C" Type="Int32" />
+    <Property Name="CODTASA2C" Type="Int32" />
+    <Property Name="CODMONEDA" Type="Int32" />
+    <Property Name="PRECIOULTCOMPRA" Type="Double" />
+    <Property Name="ULTDESCCOMERCIAL" Type="Double" />
+    <Property Name="COLORFONDO" Type="Int32" />
+    <Property Name="COLORTEXTO" Type="Int32" />
+    <Property Name="UNID1C" Type="Double" />
+    <Property Name="UNID2C" Type="Double" />
+    <Property Name="UNID3C" Type="Double" />
+    <Property Name="UNID4C" Type="Double" />
+    <Property Name="ULTDTOCOMERCIAL" Type="Double" />
+    <Property Name="PRECIOCOMPRAREAL" Type="Double" />
+    <Property Name="UDSTRASPASO" Type="Double" />
+    <Property Name="FACTPORHORA" Type="DateTime" Precision="3" />
+    <Property Name="CONSUMADIC" Type="Int32" />
+    <Property Name="TIPOARTICULO" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="NUMCONSUMICIONES" Type="Int32" />
+    <Property Name="NODISPONIBLE" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="RENDIMIENTO" Type="Double" />
+    <Property Name="DESCATALOGADO" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="SELECCIONABLEALLTURNOS" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="MARCA" Type="Int32" />
+    <Property Name="LINEA" Type="Int16" />
+    <Property Name="TARA" Type="Double" />
+    <Property Name="IDTALONARIO" Type="Int32" />
+    <Property Name="MEDIDA2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="NODTOAPLICABLE" Type="Boolean" />
+    <Property Name="AVISOVENTA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="VERSION" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ESOFERTA" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="CODCUPON" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="KCAL" Type="Int32" />
+    <Property Name="FACTPORFRANJA" Type="Boolean" />
+    <Property Name="FORZARUDSENTERASVENTA" Type="Boolean" />
+    <Property Name="ALERGENOS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VALIDOPRIMERUSO" Type="Boolean" />
+    <Property Name="COMPLETARPLATOSMENU" Type="Boolean" />
+    <NavigationProperty Name="KITS" Relationship="Self.KITSARTICULOS_FK" FromRole="ARTICULOS" ToRole="KITS" />
+    <NavigationProperty Name="PRECIOSVENTA" Relationship="Self.PRECIOSVENTA_ARTICULOS" FromRole="ARTICULOS" ToRole="PRECIOSVENTA" />
+  </EntityType>
+  <EntityType Name="KITS">
+    <Key>
+      <PropertyRef Name="CODARTICULO" />
+      <PropertyRef Name="TALLA" />
+      <PropertyRef Name="COLOR" />
+      <PropertyRef Name="LINEAKIT" />
+    </Key>
+    <Property Name="CODARTICULO" Type="Int32" Nullable="false" />
+    <Property Name="TALLA" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="COLOR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LINEAKIT" Type="Int32" Nullable="false" />
+    <Property Name="CODARTKIT" Type="Int32" Nullable="false" />
+    <Property Name="TALLAKIT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="COLORKIT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REFERENCIA" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPCIOKIT" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="REFERENCIAKIT" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="UNIDADES" Type="Double" />
+    <Property Name="PRECIOUNIDAD" Type="Double" />
+    <Property Name="TOTALLINEA" Type="Double" />
+    <Property Name="IMPRIMIRLINEA" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="VERSION" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="ARTICULOS" Relationship="Self.KITSARTICULOS_FK" FromRole="KITS" ToRole="ARTICULOS" />
+  </EntityType>
+  <EntityType Name="PRECIOSVENTA">
+    <Key>
+      <PropertyRef Name="CODARTICULO" />
+      <PropertyRef Name="CODFORMATO" />
+      <PropertyRef Name="IDTARIFAV" />
+    </Key>
+    <Property Name="CODARTICULO" Type="Int32" Nullable="false" />
+    <Property Name="CODFORMATO" Type="Int32" Nullable="false" />
+    <Property Name="IDTARIFAV" Type="Int32" Nullable="false" />
+    <Property Name="VALOR" Type="Double" />
+    <Property Name="DESDE2" Type="DateTime" Precision="3" />
+    <Property Name="HASTA2" Type="DateTime" Precision="3" />
+    <Property Name="VALOR2" Type="Double" />
+    <Property Name="DESCATALOGADO" Type="Boolean" />
+    <Property Name="VERSION" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="ARTICULOS" Relationship="Self.PRECIOSVENTA_ARTICULOS" FromRole="PRECIOSVENTA" ToRole="ARTICULOS" />
+  </EntityType>
+  <EntityType Name="TRASPALMACEN">
+    <Key>
+      <PropertyRef Name="SERIE" />
+      <PropertyRef Name="NUMERO" />
+      <PropertyRef Name="LINEA" />
+    </Key>
+    <Property Name="SERIE" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NUMERO" Type="Int32" Nullable="false" />
+    <Property Name="LINEA" Type="Int32" Nullable="false" />
+    <Property Name="CODALMORIG" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="CODALMDEST" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="FECHA" Type="DateTime" Precision="3" />
+    <Property Name="CODARTICULO" Type="Int32" />
+    <Property Name="REFERENCIA" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="UNIDADES" Type="Double" />
+    <Property Name="PRECIO" Type="Double" />
+    <Property Name="USUARIO" Type="Int32" />
+    <Property Name="CAJA" Type="Int32" />
+    <Property Name="Z" Type="Int32" />
+    <Property Name="STOCK" Type="Double" />
+    <Property Name="DESCARGADO" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="FECHACREACION" Type="DateTime" Precision="3" />
+    <Property Name="IMPRESIONES" Type="Int32" />
+    <Property Name="ESRECUENTO" Type="Boolean" />
+    <Property Name="OBSERVACIONES" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IDMOTIVO" Type="Int32" />
+    <Property Name="DESCMOTIVO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VENDEDORES">
+    <Key>
+      <PropertyRef Name="CODVENDEDOR" />
+    </Key>
+    <Property Name="CODVENDEDOR" Type="Int32" Nullable="false" />
+    <Property Name="PASSWORDENTRADA" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="NOMBREVENDEDOR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NOMBRECORTO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="COMISION" Type="Double" />
+    <Property Name="IMAGEN" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="MODULOZ" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="MODULOX" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="ACTIVO" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="TIPOEMPLEADO" Type="Int32" />
+    <Property Name="PASSWORDREGISTRO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CODIGORF" Type="Int32" />
+    <Property Name="DESCATALOGADO" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="OBSERVACIONES" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="COSTEHORA" Type="Double" />
+    <Property Name="COSTEHORAEXTRA" Type="Double" />
+    <Property Name="DIRECCION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CODPOSTAL" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="POBLACION" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DNI" Type="String" MaxLength="18" FixedLength="false" Unicode="true" />
+    <Property Name="TELEFONO" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="MOBIL" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="FECHAENTRADA" Type="DateTime" Precision="3" />
+    <Property Name="IDHOTEL" Type="Int32" />
+    <Property Name="NEWPASSWORDENTRADA" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="NEWPASSWORDREGISTRO" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="NUMARTICULOSBORRADOS" Type="Int32" />
+    <Property Name="VERSION" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="EMAIL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="COSTEHORAEXTRA2" Type="Double" />
+    <Property Name="PASSWORDENTRADARFID" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="PASSWORDREGISTRORFID" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="KITSARTICULOS_FK">
+    <End Role="ARTICULOS" Type="Self.ARTICULOS" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="KITS" Type="Self.KITS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ARTICULOS">
+        <PropertyRef Name="CODARTICULO" />
+      </Principal>
+      <Dependent Role="KITS">
+        <PropertyRef Name="CODARTICULO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PRECIOSVENTA_ARTICULOS">
+    <End Role="ARTICULOS" Type="Self.ARTICULOS" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PRECIOSVENTA" Type="Self.PRECIOSVENTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ARTICULOS">
+        <PropertyRef Name="CODARTICULO" />
+      </Principal>
+      <Dependent Role="PRECIOSVENTA">
+        <PropertyRef Name="CODARTICULO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBFRESTEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ALMACEN" EntityType="Self.ALMACEN" />
+    <EntitySet Name="ARTICULOS" EntityType="Self.ARTICULOS" />
+    <EntitySet Name="KITS" EntityType="Self.KITS" />
+    <EntitySet Name="PRECIOSVENTA" EntityType="Self.PRECIOSVENTA" />
+    <EntitySet Name="TRASPALMACEN" EntityType="Self.TRASPALMACEN" />
+    <EntitySet Name="VENDEDORES" EntityType="Self.VENDEDORES" />
+    <AssociationSet Name="KITSARTICULOS_FK" Association="Self.KITSARTICULOS_FK">
+      <End Role="ARTICULOS" EntitySet="ARTICULOS" />
+      <End Role="KITS" EntitySet="KITS" />
+    </AssociationSet>
+    <AssociationSet Name="PRECIOSVENTA_ARTICULOS" Association="Self.PRECIOSVENTA_ARTICULOS">
+      <End Role="ARTICULOS" EntitySet="ARTICULOS" />
+      <End Role="PRECIOSVENTA" EntitySet="PRECIOSVENTA" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
