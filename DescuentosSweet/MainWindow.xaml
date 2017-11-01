@@ -1,12 +1,55 @@
-﻿<Window x:Name="frmMain" x:Class="DescuentosSweet.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DescuentosSweet"
-        mc:Ignorable="d"
-        Title="Descuentos Colaboradores" Height="330.081" Width="546.816" WindowStyle="ThreeDBorderWindow">
-    <Grid>
-        
-    </Grid>
-</Window>
+﻿<Controls:MetroWindow x:Name="frmMain" x:Class="DescuentosSweet.MainWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                      Title="Descuentos Colaboradores"
+                      Height="438.384"
+                      Width="731.057" ResizeMode="NoResize" FontSize="10" BorderBrush="Green" BorderThickness="1" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Emerald.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <StackPanel>
+        <Grid Margin="40,5,40,5" Height="35">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="89*"></ColumnDefinition>
+                <ColumnDefinition Width="177*"></ColumnDefinition>
+                <ColumnDefinition Width="78*"></ColumnDefinition>
+                <ColumnDefinition Width="184*"></ColumnDefinition>
+                <ColumnDefinition Width="131*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Content="Fecha Inicio:"  Margin="5,5" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" FontWeight="Bold" />
+            <DatePicker Name="dpInicio" Margin="10,0,10,0" Grid.Column="1" MinHeight="20" Height="25" FontSize="11" VerticalAlignment="Center" />
+            <Label Content="Fecha Fin:"  Margin="5,5" Grid.Column="2" FontSize="12" FontWeight="Bold" />
+            <DatePicker Name="dpFin" Margin="10,0,10,0" Grid.Column="3" Height="25" FontSize="11" VerticalAlignment="Center" />
+            <Button Name="btnBuscar" Margin="20,5,20,5" Content="Buscar " Grid.Column="4" Click="btnBuscar_Click" />
+        </Grid>
+        <Grid Margin="5,5,5,5" Height="295">
+            <DataGrid x:Name="dgTraspalmacen" Margin="5,5,5,5" IsReadOnly="True" AutoGenerateColumns="False" MouseDoubleClick="DataGridRow_MouseDoubleClick">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="NUM" Width="40" CanUserResize="False" CanUserSort="False" Binding = "{Binding NUMERO}"/>
+                    <DataGridTextColumn Header="ORIGEN" Width="130" CanUserResize="False" CanUserSort="False" Binding = "{Binding NOMBREALMACENORIGEN}"/>
+                    <DataGridTextColumn Header="DESTINO" Width="150" CanUserResize="False" CanUserSort="False" Binding = "{Binding NOMBREALMACENDESTINO}"/>
+                    <DataGridTextColumn Header="USUARIO" CanUserResize="False" CanUserSort="False" Binding = "{Binding NOMBRECORTO}"/>
+                    <DataGridTextColumn Header="FECHA" Width="60" CanUserSort="False" CanUserResize="False" Binding = "{Binding FECHACORTA }"/>
+                    <DataGridTextColumn Header="HORA" Width="50" CanUserSort="False" CanUserResize="False" Binding = "{Binding HORA }"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <Grid Margin="5,5,5,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Name="btnEnviarDescuento" Grid.Column="0" Margin="10.10" Content="Enviar Descuentos"/>
+            <Button Name="btnSalirDescuento" Grid.Column="1" Margin="10.10" Content="Salir"/>
+        </Grid>
+    </StackPanel>
+</Controls:MetroWindow>

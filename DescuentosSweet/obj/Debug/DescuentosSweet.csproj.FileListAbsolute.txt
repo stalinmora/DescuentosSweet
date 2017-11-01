@@ -1,10 +1,8 @@
 C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\bin\Debug\DescuentosSweet.exe
 C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\bin\Debug\DescuentosSweet.pdb
-C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\obj\Debug\DescuentosSweet.csprojResolveAssemblyReference.cache
 C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\obj\Debug\MainWindow.g.cs
 C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\obj\Debug\App.g.cs
 C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\obj\Debug\DescuentosSweet_MarkupCompile.cache
-C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\obj\Debug\DescuentosSweet_MarkupCompile.lref
 C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\obj\Debug\MainWindow.baml
 C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\obj\Debug\DescuentosSweet.g.resources
 C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\obj\Debug\DescuentosSweet.Properties.Resources.resources
@@ -18,3 +16,8 @@ C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\Descuentos
 C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\bin\Debug\EntityFramework.xml
 C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\obj\Debug\DescuentosSweet_Content.g.cs
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\bin\Debug\MahApps.Metro.dll
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\bin\Debug\MahApps.Metro.pdb
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\bin\Debug\MahApps.Metro.xml
+C:\Users\s.mora\documents\visual studio 2017\Projects\DescuentosSweet\DescuentosSweet\obj\Debug\DescuentosSweet.csprojResolveAssemblyReference.cache
